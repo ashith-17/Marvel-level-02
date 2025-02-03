@@ -8,3 +8,4 @@ The **Iterative Dichotomiser 3 Decision Tree Algorithm** is a classification alg
 3. Select the Feature with the Highest Information Gain** – This becomes the root node.  
 4. Split the Dataset based on the selected feature and repeat the process recursively.
 5. It is stopped when all examples belong to the same class,no more attributes remain to split or the dataset is empty.  
+[Implementation of ID3](https://www.kaggle.com/code/ashith1709/id3-algorithm)
