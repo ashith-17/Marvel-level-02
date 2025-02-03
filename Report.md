@@ -41,7 +41,9 @@ Equation of Bayes Theorem.P(C|X) = P(X|C) * P(C) / P(X). Types of Naive Bayes -
 
 4. **Predict Class**:  
    Choose the class with the highest posterior probability.
-
+   
+   ![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/Prob%20df.jpg)
+   
    [Implementing it for text classification](https://www.kaggle.com/code/ashith1709/notebook045b1da53d)
    
 
