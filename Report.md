@@ -9,4 +9,4 @@ The **Iterative Dichotomiser 3 Decision Tree Algorithm** is a classification alg
 4. Split the Dataset based on the selected feature and repeat the process recursively.
 5. It is stopped when all examples belong to the same class,no more attributes remain to split or the dataset is empty.  
 [Implementation of ID3](https://www.kaggle.com/code/ashith1709/id3-algorithm)
-![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/5d6992f7ba9e75de58303f848c2e7516c5112df4/pics/id3%20algorithm.png)
+![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/Id3%20algorithm%20DT.png)
