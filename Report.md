@@ -32,8 +32,8 @@ Equation of Bayes Theorem.P(C|X) = P(X|C) * P(C) / P(X). Types of Naive Bayes -
    [Implementing it for text classification](https://www.kaggle.com/code/ashith1709/notebook045b1da53d)
 
 
-       
-   # Task 3 - Ensemble techniques
+
+# Task 3 - Ensemble techniques
 
 
 Ensemble learning is a technique that combines multiple models to improve performance, accuracy, and robustness. By aggregating the predictions of several models, ensemble methods can often outperform individual models. The key techniques inlcude:
