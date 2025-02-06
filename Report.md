@@ -5,9 +5,10 @@ The **Iterative Dichotomiser 3 Decision Tree Algorithm** is a classification alg
 
 1. Calculate Entropy of the Dataset – Measures impurity in the dataset.  H(S)=−∑(i=1,n)(pᵢ * log₂(pᵢ))
 2. Calculate Information Gain for Each Feature – Determines the effectiveness of an attribute in splitting the data.  IG(S,A)=H(S)−H(S∣A)
-3. Select the Feature with the Highest Information Gain** – This becomes the root node.  
-4. Split the Dataset based on the selected feature and repeat the process recursively.
-5. It is stopped when all examples belong to the same class,no more attributes remain to split or the dataset is empty.  
+3. Select the Feature with the Highest Information Gain
+4. – This becomes the root node.  
+5. Split the Dataset based on the selected feature and repeat the process recursively.
+6. It is stopped when all examples belong to the same class,no more attributes remain to split or the dataset is empty.  
 [Implementation of ID3](https://www.kaggle.com/code/ashith1709/id3-algorithm)
 ![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/Id3%20algorithm%20DT.png)
 
