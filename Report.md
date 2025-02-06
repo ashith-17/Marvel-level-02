@@ -15,30 +15,17 @@ The **Iterative Dichotomiser 3 Decision Tree Algorithm** is a classification alg
 # Task 2 - Naive Bayesian Classifier
 
 The **Naive Bayes classifier** is a probabilistic model based on **Bayes' Theorem** with an assumption of feature independence.  
-Equation of Bayes Theorem.P(C|X) = P(X|C) * P(C) / P(X). Types of Naive Bayes -
+Equation of Bayes Theorem.P(C|X) = P(X|C) * P(C) / P(X). Types of Naive Bayes -  
+  
+  1.Gaussian Naive Bayes: Assumes features follow a Gaussian (normal) distribution and used for continuous data.  
+  2.Multinomial Naive Bayes: Assumes features follow a multinomial distribution (e.g., word counts) and used for discrete data like text.  
+  3.Bernoulli Naive Bayes:  Assumes binary features (0 or 1) and used for binary attributes.  
 
-1. **Gaussian Naive Bayes**:
-     Assumes features follow a **Gaussian (normal) distribution** and used for **continuous data**.
-
-2. **Multinomial Naive Bayes**:
-     Assumes features follow a **multinomial distribution** (e.g., word counts) and used for **discrete data** like text.
-
-3. **Bernoulli Naive Bayes**:
-     Assumes binary features (0 or 1) and used for binary attributes.
-
-    Steps in Naive Bayes
-
-1. **Calculate Prior Probabilities**:  
-   Compute P(C), the probability of each class.
-   
-2. **Calculate Likelihood**:  
-   Compute P(X|C) for each feature using probability distribution function(∏ P(xᵢ|C) ).
-   
-3. **Apply Bayes' Theorem**:  
-   Compute P(C|X) for each class.
-
-4. **Predict Class**:  
-   Choose the class with the highest posterior probability.
+ Steps in Naive Bayes:  
+- Calculate Prior Probabilities:Compute P(C), the probability of each class.
+- Calculate Likelihood:Compute P(X|C) for each feature using probability distribution function(∏ P(xᵢ|C) ).
+- Apply Bayes' Theorem:Compute P(C|X) for each class.
+- Predict Class:Choose the class with the highest posterior probability.  
    
    ![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/Prob%20df.jpg)
    
@@ -58,6 +45,11 @@ Ensemble learning is a technique that combines multiple models to improve perfor
  3. Stacking
     Combines different models (base learners) and uses a meta-model to combine their predictions, leveraging the strengths of multiple algorithms.Example: Stacked Generalization.
 
+![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/Ensemble%20techniques.jpg)  
+
+[Basic Ensemble techniques](https://www.kaggle.com/code/ashith1709/ensemble-techniques)   
+
+[Ensemble techniques on Titanic Dataset](https://www.kaggle.com/code/ashith1709/ensemble-on-titanic)
      
 
 
