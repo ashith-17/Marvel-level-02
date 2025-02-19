@@ -22,10 +22,10 @@ Equation of Bayes Theorem.P(C|X) = P(X|C) * P(C) / P(X). Types of Naive Bayes -
   3.Bernoulli Naive Bayes:  Assumes binary features (0 or 1) and used for binary attributes.  
 
  Steps in Naive Bayes:  
-- Calculate Prior Probabilities:Compute P(C), the probability of each class.
-- Calculate Likelihood:Compute P(X|C) for each feature using probability distribution function(∏ P(xᵢ|C) ).
-- Apply Bayes' Theorem:Compute P(C|X) for each class.
-- Predict Class:Choose the class with the highest posterior probability.  
+ 1.Calculate Prior Probabilities:Compute P(C), the probability of each class.  
+ 2.Calculate Likelihood:Compute P(X|C) for each feature using probability distribution function(∏ P(xᵢ|C) ).  
+ 3.Apply Bayes' Theorem:Compute P(C|X) for each class.  
+ 4.Predict Class:Choose the class with the highest posterior probability.  
    
    ![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/Prob%20df.jpg)
    
@@ -49,7 +49,36 @@ Ensemble learning is a technique that combines multiple models to improve perfor
 
 [Basic Ensemble techniques](https://www.kaggle.com/code/ashith1709/ensemble-techniques)   
 
-[Ensemble techniques on Titanic Dataset](https://www.kaggle.com/code/ashith1709/ensemble-on-titanic)
+[Ensemble techniques on Titanic Dataset](https://www.kaggle.com/code/ashith1709/ensemble-on-titanic)  
+
+
+# Task 4 - Random Forest, GBM and Xgboost  
+
+### Random Forest Algorithm:
+
+ 1.Bootstrapping:  
+ The algorithm randomly samples data with replacement from the original dataset.Each sample is used to train an independent decision tree.  
+
+ 2.Feature Randomness & Decision Tree Splitting:  
+ At each node split, a random subset of features is selected instead of considering all features.The best feature is chosen based on: Gini Impurity/Entropy(for classification) 
+ and Mean Squared Error (for regression).This feature randomness reduces correlation between trees, improving diversity and preventing overfitting.
+
+ 3.Training Multiple Decision Trees:  
+ Each decision tree is trained independently on a different bootstrap sample.The trees grow to their maximum depth unless a stopping condition is met.Since each tree is trained on different data and features, they make diverse predictions.
+
+ 4.Aggregation of Predictions:  
+ For Classification:Each tree votes for a class, and the majority class is selected.
+ For Regression: Predictions from all trees are averaged to obtain the final result.
+
+ 5.Model Evaluation & Feature Importance:  
+**Out-of-Bag (OOB) error** is calculated using data left out during bootstrap sampling.Feature importance is determined based on:Gini Importance and Permutation Importance.
+  Hyperparameters like the number of trees, depth, and number of features per split are optimized for better performance.  
+
+  [Implementing Random Forest](https://www.kaggle.com/code/ashith1709/random-forest)
+
+
+
+
      
 
 
