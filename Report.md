@@ -78,7 +78,64 @@ Ensemble learning is a technique that combines multiple models to improve perfor
 
  ### Gradient Boost Machine:
 
- ![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/GBM%20For%20Regression.png)
+ ![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/GBM%20For%20Regression.png)   
+
+
+### Gradient Boosting Machine (GBM) for Regression: 
+
+1.Initialize the Model:  
+The model starts with a constant function,typically the mean of the target variable 𝑦.The purpose of this step is to establish an initial model that minimizes the loss function(MSE) for the given data.
+
+2.Compute Residuals (Errors):  
+ Calculate the difference between actual values and the current model’s predictions.These residuals represent the errors that the next model will learn to correct.
+
+3.Train Weak Learners (Decision Trees):    
+A shallow Decision Tree (weak learner) is trained on the residuals. Instead of predicting the target variable, it learns to predict the residual errors.The number of features considered at each split is often limited to prevent overfitting.
+
+4.Update the Model Using Learning Rate:  
+The new model is added to the existing model with a scaling factor called the **learning rate (η)**.
+
+5.Repeat Until Convergence:  
+ Steps 2 to 4 are repeated for a predefined number of iterations (trees) or until the improvement in error is minimal.The final prediction is obtained by summing the contributions from all weak learners.  
+
+### Gradient Boosting Machine (GBM) for Classification:  
+
+ 1.Initialize the Model with a Constant Value: 
+The model starts with an initial prediction that minimizes the loss function.For **binary classification**, this is typically the log-odds of the positive class:  
+   F_0(x) = log(p/1-p),where p is the proportion of positive class instances.  
+
+
+2.Iterate Over M Weak Learners (Boosting Steps): 
+For each boosting iteration m, we improve the model by adding a new tree.  
+
+---  
+
+2.1: Compute Pseudo-Residuals:   
+Instead of simple residuals, we compute **pseudo-residuals** using the gradient of the **log loss function**:  
+  r_{im} = y_i - p_i
+  where p_i is the predicted probability for class 1.  
+  
+ 
+2.2: Train a Weak Learner on Pseudo-Residuals:  
+ We fit a **decision tree** to predict the computed pseudo-residuals.The purpose of this step is for the tree to learn patterns in the residuals and improve predictions.  
+
+
+2.3 :Compute the Scaling Factor:  
+ The optimal scaling factor controls how much the new weak learner contributes to the model.It is found by minimizing the loss function.The purpose of this step is to adjust the contribution of the weak learner to prevent overfitting.  
+
+ 2.4: Update the Model: 
+ The model is updated by adding the new weak learner multiplied by the scaling factor:  
+  F_m(x) = F_{m-1}(x) + gamma_m h_m(x)  
+The predicted probabilities are then updated using the **sigmoid function** for binary classification.  
+
+  ---
+ 
+3: Final Prediction:
+After M iterations, the final model is obtained F_M(x).The final prediction for binary classification is:  
+y={1,p_i>=0.5  and  0,p_i<0.5 }
+
+  
+
 
 
 
