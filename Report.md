@@ -54,7 +54,7 @@ Ensemble learning is a technique that combines multiple models to improve perfor
 
 # Task 4 - Random Forest, GBM and Xgboost  
 
-### Random Forest Algorithm:
+### Random Forest:
 
  1.Bootstrapping:  
  The algorithm randomly samples data with replacement from the original dataset.Each sample is used to train an independent decision tree.  
@@ -74,7 +74,9 @@ Ensemble learning is a technique that combines multiple models to improve perfor
 **Out-of-Bag (OOB) error** is calculated using data left out during bootstrap sampling.Feature importance is determined based on:Gini Importance and Permutation Importance.
   Hyperparameters like the number of trees, depth, and number of features per split are optimized for better performance.  
 
-  [Implementing Random Forest](https://www.kaggle.com/code/ashith1709/random-forest)
+  [Implementing Random Forest](https://www.kaggle.com/code/ashith1709/random-forest)  
+
+ ### Gradient Boost Machine:
 
 
 
