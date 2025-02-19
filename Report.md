@@ -78,6 +78,8 @@ Ensemble learning is a technique that combines multiple models to improve perfor
 
  ### Gradient Boost Machine:
 
+ ![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/GBM%20For%20Regression.png)
+
 
 
 
