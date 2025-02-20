@@ -139,7 +139,7 @@ y={1,p_i>=0.5  and  0,p_i<0.5 }
 
 ### XGBOOST (Extreme Gradient Boosting)  
  
-![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/XGBOOST.jpg)   
+![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/xgb.jpg)   
 
 This breakdown highlights the step-by-step differences between regression and classification in XGBoost, without formulas—just the key terms.  
 
