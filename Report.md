@@ -136,8 +136,35 @@ The predicted probabilities are then updated using the **sigmoid function** for 
 After M iterations, the final model is obtained F_M(x).The final prediction for binary classification is:  
 y={1,p_i>=0.5  and  0,p_i<0.5 }  
 
-[GBM For Classification](https://www.kaggle.com/code/ashith1709/gbm-for-classification)
+[GBM For Classification](https://www.kaggle.com/code/ashith1709/gbm-for-classification)  
 
+### XGBOOST (Extreme Gradient Boosting)  
+
+  
+ 
+
+This breakdown highlights the step-by-step differences between regression and classification in XGBoost, without formulas—just the key terms.  
+
+1. Initial Prediction  
+Regression:Mean of the target variable as the initial prediction.Classification:Log-odds of the positive class probability as the initial prediction, converts log-odds to probability using the sigmoid function.  
+
+2. Compute Residuals (Gradients of the Loss Function)  
+Regression:Gradients as the difference between actual and predicted values.Classification:Gradients as the difference between actual labels and predicted probabilities, uses sigmoid-transformed probabilities in the calculation.  
+
+3. Compute Hessians (Second-Order Derivative of the Loss Function)  
+Regression:Hessians are set to 1, since MSE has a constant second derivative.Classification:Hessians depend on predicted probabilities, adjusting based on how confident the model is.  
+
+4. Build the Decision Tree (Finding Best Splits)  
+Regression:Gain function determines the best splits based on gradients and Hessians.Classification:Gain function is used, but Hessians are different since they depend on probabilities.  
+
+5. Compute Leaf Weights  
+Regression:Leaf weights are computed using gradients and Hessians, Hessians remain 1 throughout.Classification:Leaf weights are computed using gradients and Hessians, Hessians are probability-dependent, making weight calculations different.  
+
+6. Update Predictions  
+Regression:Predictions are updated by adding scaled leaf weights using the learning rate.Classification:Predictions are updated by adding scaled leaf weights using the learning rate, predictions are converted into probabilities using the sigmoid function.  
+
+7. Stop When Convergence is Reached  
+Regression:Training stops when stopping criteria are met, such as minimum improvement in MSE loss, maximum number of trees, or early stopping.Classification:Training stops when stopping criteria are met, such as minimum improvement in log-loss, maximum number of trees, or early stopping.  
   
 
 
