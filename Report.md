@@ -98,6 +98,8 @@ The new model is added to the existing model with a scaling factor called the **
 5.Repeat Until Convergence:  
  Steps 2 to 4 are repeated for a predefined number of iterations (trees) or until the improvement in error is minimal.The final prediction is obtained by summing the contributions from all weak learners.  
 
+[GBM For Regression](https://www.kaggle.com/code/ashith1709/gbm-for-regression)
+
 ### Gradient Boosting Machine (GBM) for Classification:  
 
  1.Initialize the Model with a Constant Value: 
@@ -132,7 +134,9 @@ The predicted probabilities are then updated using the **sigmoid function** for 
  
 3: Final Prediction:
 After M iterations, the final model is obtained F_M(x).The final prediction for binary classification is:  
-y={1,p_i>=0.5  and  0,p_i<0.5 }
+y={1,p_i>=0.5  and  0,p_i<0.5 }  
+
+[GBM For Classification](https://www.kaggle.com/code/ashith1709/gbm-for-classification)
 
   
 
