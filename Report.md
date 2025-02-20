@@ -76,12 +76,11 @@ Ensemble learning is a technique that combines multiple models to improve perfor
 
   [Implementing Random Forest](https://www.kaggle.com/code/ashith1709/random-forest)  
 
- ### Gradient Boost Machine:
-
- ![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/GBM%20For%20Regression.png)   
-
+ ### Gradient Boost Machine: 
 
 ### Gradient Boosting Machine (GBM) for Regression: 
+
+ ![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/GBM%20For%20Regression.png) 
 
 1.Initialize the Model:  
 The model starts with a constant function,typically the mean of the target variable 𝑦.The purpose of this step is to establish an initial model that minimizes the loss function(MSE) for the given data.
@@ -139,9 +138,8 @@ y={1,p_i>=0.5  and  0,p_i<0.5 }
 [GBM For Classification](https://www.kaggle.com/code/ashith1709/gbm-for-classification)  
 
 ### XGBOOST (Extreme Gradient Boosting)  
-
-  
  
+![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/XGBOOST.jpg)   
 
 This breakdown highlights the step-by-step differences between regression and classification in XGBoost, without formulas—just the key terms.  
 
@@ -164,7 +162,10 @@ Regression:Leaf weights are computed using gradients and Hessians, Hessians rema
 Regression:Predictions are updated by adding scaled leaf weights using the learning rate.Classification:Predictions are updated by adding scaled leaf weights using the learning rate, predictions are converted into probabilities using the sigmoid function.  
 
 7. Stop When Convergence is Reached  
-Regression:Training stops when stopping criteria are met, such as minimum improvement in MSE loss, maximum number of trees, or early stopping.Classification:Training stops when stopping criteria are met, such as minimum improvement in log-loss, maximum number of trees, or early stopping.  
+Regression:Training stops when stopping criteria are met, such as minimum improvement in MSE loss, maximum number of trees, or early stopping.Classification:Training stops when stopping criteria are met, such as minimum improvement in log-loss, maximum number of trees, or early stopping.
+
+[XGB For cla](https://www.kaggle.com/code/ashith1709/xgboost-for-classification)
+[XGB For Reg](https://www.kaggle.com/code/ashith1709/xgboost-for-regression)
   
 
 
