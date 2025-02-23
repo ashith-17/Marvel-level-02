@@ -165,7 +165,22 @@ Regression:Predictions are updated by adding scaled leaf weights using the learn
 Regression:Training stops when stopping criteria are met, such as minimum improvement in MSE loss, maximum number of trees, or early stopping.Classification:Training stops when stopping criteria are met, such as minimum improvement in log-loss, maximum number of trees, or early stopping.
 
 [XGB For cla](https://www.kaggle.com/code/ashith1709/xgboost-for-classification)
-[XGB For Reg](https://www.kaggle.com/code/ashith1709/xgboost-for-regression)
+[XGB For Reg](https://www.kaggle.com/code/ashith1709/xgboost-for-regression)  
+
+  
+# Task 5 - Hyperparameter Tuning
+  
+Hyperparameter tuning is the process of selecting the optimal values for a machine learning model’s hyperparameters.They control the learning process itself, rather than being learned from the data.Hyperparameters are often used to tune the model's performance,accuracy, generalization, and other metrics.
+
+1. Random Search  
+Random Search selects hyperparameters randomly from predefined distributions and evaluates their performance. It is effective for exploring large search spaces, as it does not require testing all possible combinations. The number of iterations (`n_iter`) determines how many different configurations are evaluated, making it flexible based on available computational resources. Although it does not guarantee finding the optimal hyperparameters, it often discovers a competitive configuration faster than exhaustive search methods.  
+
+3. Grid Search  
+Grid Search systematically evaluates all possible hyperparameter combinations from a predefined grid. It is most effective when the search space is small, as testing every combination becomes computationally expensive for larger grids. Cross-validation is used to ensure that the selected hyperparameters generalize well to new data. While it guarantees finding the best-performing combination within the grid, it can be inefficient compared to adaptive search methods when dealing with high-dimensional spaces.  
+
+4. Bayesian Optimization  
+Bayesian Optimization builds a probabilistic model of the objective function to guide the search for optimal hyperparameters. It starts with a few random trials and then refines the search using a Gaussian Process and an acquisition function, focusing on promising regions of the search space. Unlike Grid and Random Search, it balances exploration and exploitation, reducing the number of trials needed to find the best configuration. This method is particularly useful for expensive model training, as it optimizes performance with fewer evaluations.
+
   
 
 
