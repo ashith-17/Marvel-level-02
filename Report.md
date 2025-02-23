@@ -181,7 +181,9 @@ Grid Search systematically evaluates all possible hyperparameter combinations fr
 4. Bayesian Optimization  
 Bayesian Optimization builds a probabilistic model of the objective function to guide the search for optimal hyperparameters. It starts with a few random trials and then refines the search using a Gaussian Process and an acquisition function, focusing on promising regions of the search space. Unlike Grid and Random Search, it balances exploration and exploitation, reducing the number of trials needed to find the best configuration. This method is particularly useful for expensive model training, as it optimizes performance with fewer evaluations.
 
-![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/hyperparameters.jpg)  
+![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/hyperparameters.jpg)    
+
+[Hyperparameter Tuning](https://www.kaggle.com/code/ashith1709/hyperparameter-tuning)
 
   
 
