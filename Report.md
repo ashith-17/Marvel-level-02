@@ -235,10 +235,21 @@ K-Means tries to minimize J, meaning it reduces the variance within each cluster
 - MiniBatch K-Means: Processes data in small batches, making it faster for large datasets.  
 - Fuzzy K-Means: Allows points to belong to multiple clusters with different probabilities.
 
-[MNIST](https://www.kaggle.com/code/ashith1709/image-classification-using-kmeans-clustering)
+[MNIST](https://www.kaggle.com/code/ashith1709/image-classification-using-kmeans-clustering)  
 
+# Task 7: Anomaly Detection  
+ 
+Anomaly detection (or outlier detection) identifies data points that significantly deviate from normal patterns. These anomalies may indicate errors, fraud, unusual patterns, or rare events in a dataset.  
 
+Types of Anomalies  
+
+Point Anomalies → A single instance significantly deviates from the rest.Example:A sudden spike in online purchases.  
+
+Contextual Anomalies → A data point is abnormal in a specific context.Example:A high heart rate while resting.  
+
+Collective Anomalies → A group of data points shows an unusual pattern.Example: Multiple failed login attempts indicating a cyberattack.
   
+
 
   
 
