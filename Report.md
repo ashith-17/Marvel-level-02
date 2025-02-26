@@ -54,7 +54,7 @@ Ensemble learning is a technique that combines multiple models to improve perfor
 
 # Task 4 - Random Forest, GBM and Xgboost  
 
-### Random Forest:
+## Random Forest:
 
  1.Bootstrapping:  
  The algorithm randomly samples data with replacement from the original dataset.Each sample is used to train an independent decision tree.  
@@ -76,7 +76,7 @@ Ensemble learning is a technique that combines multiple models to improve perfor
 
   [Implementing Random Forest](https://www.kaggle.com/code/ashith1709/random-forest)  
 
- ### Gradient Boost Machine: 
+ ## Gradient Boost Machine: 
 
 ### Gradient Boosting Machine (GBM) for Regression: 
 
@@ -137,7 +137,7 @@ y={1,p_i>=0.5  and  0,p_i<0.5 }
 
 [GBM For Classification](https://www.kaggle.com/code/ashith1709/gbm-for-classification)  
 
-### XGBOOST (Extreme Gradient Boosting)  
+## XGBOOST (Extreme Gradient Boosting)  
  
 ![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/x.jpg)   
 
@@ -187,6 +187,8 @@ Bayesian Optimization builds a probabilistic model of the objective function to 
 
 
 # Task 6 : Image Classification using KMeans Clustering
+
+![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/kmean.png)
  
 K-Means clustering is an unsupervised machine learning algorithm used for partitioning data into K distinct groups (clusters). It is widely used in applications like image segmentation, anomaly detection, and pattern recognition.
 
@@ -215,10 +217,10 @@ J = \sum_{i=1}^{K} \sum_{x \in C_i} || x - \mu_i ||^2
 ```
 
 where:  
-- \( K \) = Number of clusters  
-- \( C_i \) = Set of points belonging to cluster \( i \)  
-- \( \mu_i \) = Centroid of cluster \( i \)  
-- \( || x - \mu_i ||^2 \) = Squared Euclidean distance between a point and its cluster centroid  
+-  K  = Number of clusters  
+-  C_i = Set of points belonging to cluster i   
+-  mu_i = Centroid of cluster i  
+-  || x - mu_i ||^2  = Squared Euclidean distance between a point and its cluster centroid  
 
 K-Means tries to minimize J, meaning it reduces the variance within each cluster.
 
