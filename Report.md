@@ -238,16 +238,18 @@ K-Means tries to minimize J, meaning it reduces the variance within each cluster
 [MNIST](https://www.kaggle.com/code/ashith1709/image-classification-using-kmeans-clustering)  
 
 # Task 7: Anomaly Detection  
+
+ ![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/ad.png) 
  
 Anomaly detection (or outlier detection) identifies data points that significantly deviate from normal patterns. These anomalies may indicate errors, fraud, unusual patterns, or rare events in a dataset.  
 
 Types of Anomalies  
 
 Point Anomalies → A single instance significantly deviates from the rest.Example:A sudden spike in online purchases.  
-
 Contextual Anomalies → A data point is abnormal in a specific context.Example:A high heart rate while resting.  
+Collective Anomalies → A group of data points shows an unusual pattern.Example: Multiple failed login attempts indicating a cyberattack.  
 
-Collective Anomalies → A group of data points shows an unusual pattern.Example: Multiple failed login attempts indicating a cyberattack.
+![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/anamoly.jpg)
   
 
 
