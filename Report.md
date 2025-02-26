@@ -183,7 +183,58 @@ Bayesian Optimization builds a probabilistic model of the objective function to 
 
 ![](https://raw.githubusercontent.com/ashith-17/Marvel-level-02/refs/heads/main/pics/hyperparameters.jpg)    
 
-[Hyperparameter Tuning](https://www.kaggle.com/code/ashith1709/hyperparameter-tuning)
+[Hyperparameter Tuning](https://www.kaggle.com/code/ashith1709/hyperparameter-tuning)  
+
+
+# Task 6 : Image Classification using KMeans Clustering
+ 
+K-Means clustering is an unsupervised machine learning algorithm used for partitioning data into K distinct groups (clusters). It is widely used in applications like image segmentation, anomaly detection, and pattern recognition.
+
+The K-Means algorithm follows these steps:
+
+Step 1: Choose the Number of Clusters (K)  
+The user specifies the number of clusters, K.Choosing the optimal K is crucial (methods like the Elbow Method help in selection).  
+
+Step 2: Initialize Cluster Centroids  
+Randomly select K points from the dataset as initial cluster centers.Other initialization methods, like K-Means++, improve accuracy by choosing better initial points.
+
+Step 3: Assign Each Data Point to the Nearest Cluster  
+For each data point, calculate its Euclidean distance to each cluster centroid.Assign the data point to the cluster with the nearest centroid.
+
+Step 4: Recalculate Cluster Centroids  
+After assigning all points, recalculate the new centroids by taking the mean of all points in each cluster.
+
+Step 5: Repeat Until Convergence  
+Steps 3 and 4 are repeated until,centroids do not change significantly,the sum of distances (within-cluster sum of squares) stabilizes and a maximum number of iterations is reached.
+
+## Mathematical Representation  
+The objective function (also called within-cluster sum of squares - WCSS) that K-Means minimizes is:
+
+```math
+J = \sum_{i=1}^{K} \sum_{x \in C_i} || x - \mu_i ||^2
+```
+
+where:  
+- \( K \) = Number of clusters  
+- \( C_i \) = Set of points belonging to cluster \( i \)  
+- \( \mu_i \) = Centroid of cluster \( i \)  
+- \( || x - \mu_i ||^2 \) = Squared Euclidean distance between a point and its cluster centroid  
+
+K-Means tries to minimize J, meaning it reduces the variance within each cluster.
+
+## Choosing the Right Value of K (Elbow Method)  
+- A common method to find the optimal K is the Elbow Method.  
+- The algorithm runs K-Means for multiple values of K and plots the WCSS vs. K.  
+- The “elbow” in the curve (where WCSS stops decreasing significantly) suggests the best K.
+
+
+## Variants of K-Means  
+- K-Means++: Improves initialization by choosing smarter initial centroids.  
+- MiniBatch K-Means: Processes data in small batches, making it faster for large datasets.  
+- Fuzzy K-Means: Allows points to belong to multiple clusters with different probabilities.
+
+[MNIST](https://www.kaggle.com/code/ashith1709/image-classification-using-kmeans-clustering)
+
 
   
 
